@@ -27,7 +27,7 @@ document
     document.getElementById("idCliente").value = counter;
   });
 
-// Esto era dos codigos pero lo he refactorizado a una funcion porque kawai 15 lineas menos
+// Esto era dos codigos pero lo he refactorizado a una funcion
 function duplicateFood(select, otroSelect) {
   select.addEventListener("change", () => {
     const valorSeleccionado = select.value;
