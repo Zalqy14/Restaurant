@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Restaurante La Luna</title>
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="CSS/contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1><i class="fa-solid fa-moon"></i> La Luna</h1>
+      <nav>
+        <a href="index.html#sobreNosotros"
+          ><i class="fa-solid fa-users"></i><span>Sobre Nosotros</span></a
+        >
+        <a href="index.html#cifras"
+          ><i class="fa-solid fa-star"></i><span>Cifras</span></a
+        >
+        <a href="index.html#carta"
+          ><i class="fa-solid fa-utensils"></i><span>Carta</span></a
+        >
+        <a href="Order.html"
+          ><i class="fa-solid fa-basket-shopping"></i><span>Pedir</span></a
+        >
+        <a href="Contacto.html" class="active"
+          ><i class="fa-solid fa-envelope"></i><span>Contacta</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section id="contacto-container">
+        <div class="contacto-info">
+          <h2>Contacto</h2>
+          <p>¿Tienes alguna duda o quieres hacer una reserva especial? Escríbenos y te responderemos lo antes posible.</p>
+          
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h3>Dirección</h3>
+              <p>Calle Falsa 123, 28080 Madrid, España</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h3>Teléfono</h3>
+              <p>+34 912 345 678</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>info@restaurantelaluna.es</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contacto-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required placeholder="Asunto de tu mensaje">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí tu mensaje..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-moon"></i> Restaurante La Luna</h4>
+          <p>Cocina tradicional con alma, desde 2004.</p>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-clock"></i> Horario</h4>
+          <p>Lun &ndash; Vie: 13:00 &ndash; 16:00 | 20:00 &ndash; 23:30</p>
+          <p>Sábado &ndash; Dom: 13:00 &ndash; 24:00</p>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-share-nodes"></i> Síguenos</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="TripAdvisor"
+              ><i class="fa-brands fa-tripadvisor"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Restaurante La Luna &mdash; Todos los derechos reservados
+      </div>
+    </footer>
+  </body>
+</html>

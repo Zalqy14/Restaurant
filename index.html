@@ -1,107 +1,212 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menú Restaurante</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Restaurante La Luna</title>
+    <meta
+      name="description"
+      content="Restaurante La Luna — cocina tradicional con ingredientes frescos y locales. Reserva tu mesa y descubre nuestra carta, menu del dia y eventos especiales."
+    />
+    <meta
+      name="keywords"
+      content="restaurante, La Luna, cocina tradicional, reservas, carta, menu del dia"
+    />
+    <meta name="author" content="Restaurante La Luna" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Restaurante La Luna" />
+    <meta
+      property="og:description"
+      content="Cocina tradicional en un ambiente intimo. Reserva tu mesa hoy."
+    />
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="es_ES" />
+    <link rel="icon" href="img/favicon.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Menú Pedir</h1>
-    <form action="" id="formComensales">
-      <label for="">Cuantos Comensales</label>
-      <input
-        type="number"
-        name="cantidadComensales"
-        id="cantidadComensales"
-        min="1"
-        max="4"
-        required
-      />
-      <input type="submit" name="" id="enviarComensales" />
-    </form>
-    <form
-      action="pedido.php"
-      method="post"
-      id="pedirComida"
-      style="display: none"
-      target="_self"
-    >
-      <fieldset id="fieldset">
-        <legend id="numeroCliente"></legend>
-        <label for="select1">Plato 1:</label>
-        <select id="select1" name="plato1">
-          <option value="" disabled selected hidden></option>
-          <optgroup label="Carne">
-            <option value="carne">Costillar</option>
-            <option value="carne">Salchichas</option>
-            <option value="carne">Entrecot</option>
-          </optgroup>
-          <optgroup label="Pescado">
-            <option value="pescado">Merluza</option>
-            <option value="pescado">Salmon</option>
-            <option value="pescado">Atún</option>
-          </optgroup>
-          <optgroup label="Pasta & Pizza">
-            <option value="pasta">Macarrones</option>
-            <option value="pasta">Pizza margarita</option>
-            <option value="pasta">Pizza Barbacoa</option>
-          </optgroup>
-        </select>
-        <br />
+    <header>
+      <h1><i class="fa-solid fa-moon"></i> La Luna</h1>
+      <nav>
+        <a href="#sobreNosotros"
+          ><i class="fa-solid fa-users"></i><span>Sobre Nosotros</span></a
+        >
+        <a href="#cifras"
+          ><i class="fa-solid fa-star"></i><span>Cifras</span></a
+        >
+        <a href="#carta"
+          ><i class="fa-solid fa-utensils"></i><span>Carta</span></a
+        >
+        <a href="Order.html"
+          ><i class="fa-solid fa-basket-shopping"></i><span>Pedir</span></a
+        >
+        <a href="Contacto.html"
+          ><i class="fa-solid fa-envelope"></i><span>Contacta</span></a
+        >
+      </nav>
+    </header>
 
-        <label for="select2">Plato 2:</label>
-        <select id="select2" name="plato2">
-          <option value="" disabled selected hidden></option>
-          <optgroup label="Carne">
-            <option value="carne">Costillar</option>
-            <option value="carne">Salchichas</option>
-            <option value="carne">Entrecot</option>
-          </optgroup>
-          <optgroup label="Pescado">
-            <option value="pescado">Merluza</option>
-            <option value="pescado">Salmon</option>
-            <option value="pescado">Atún</option>
-          </optgroup>
-          <optgroup label="Pasta & Pizza">
-            <option value="pasta">Macarrones</option>
-            <option value="pasta">Pizza margarita</option>
-            <option value="pasta">Pizza Barbacoa</option>
-          </optgroup>
-        </select>
-        <br />
+    <main>
+      <!-- Hero -->
+      <div id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-tag">Bienvenido a</p>
+          <h2>La Calidad de lo Tradicional</h2>
+          <p class="hero-sub">
+            Ingredientes frescos, sabor autentico, 20 años de historia
+          </p>
+          <div class="hero-buttons">
+            <a href="Order.html" class="btn-primary"
+              ><i class="fa-solid fa-basket-shopping"></i> Pedir Ahora</a
+            >
+            <a href="#carta" class="btn-secondary"
+              ><i class="fa-solid fa-utensils"></i> Ver Carta</a
+            >
+          </div>
+        </div>
+      </div>
 
-        <label for="select3">Bebidas:</label>
-        <select id="select3" name="bebida">
-          <option value="" disabled selected hidden></option>
-          <optgroup label="Refrescos">
-            <option value="refrescos">Aquarius</option>
-            <option value="refrescos">Coca Cola</option>
-            <option value="refrescos">Nestea</option>
-          </optgroup>
-        </select>
-        <br />
+      <!-- Cifras -->
+      <section id="cifras">
+        <div class="cifra">
+          <span class="cifra-numero">20+</span>
+          <span class="cifra-label"
+            ><i class="fa-solid fa-calendar-days"></i> Años de experiencia</span
+          >
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">5.000+</span>
+          <span class="cifra-label"
+            ><i class="fa-solid fa-face-smile"></i> Clientes satisfechos</span
+          >
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">30+</span>
+          <span class="cifra-label"
+            ><i class="fa-solid fa-bowl-food"></i> Platos en carta</span
+          >
+        </div>
+        <div class="cifra">
+          <span class="cifra-numero">4.9</span>
+          <span class="cifra-label"
+            ><i class="fa-solid fa-star"></i> Valoracion media</span
+          >
+        </div>
+      </section>
 
-        <label for="select4">Postres:</label>
-        <select id="select4" name="postre">
-          <option value="" disabled selected hidden></option>
-          <optgroup label="Helado">
-            <option value="helado">Helado de Nata</option>
-            <option value="helado">Helado de Chocolate</option>
-            <option value="helado">Helado de Menta</option>
-          </optgroup>
-        </select>
-        <br />
-        <input type="hidden" id="idCliente" name="idCliente" value="" />
-        <input type="submit" id="guardar_pedido" value="Guardar Pedido" />
-      </fieldset>
-      <input
-        type="submit"
-        id="enviarPedido"
-        value="Enviar Pedido"
-        style="display: none"
-      />
-    </form>
-    <script src="index.js"></script>
+      <!-- Sobre Nosotros -->
+      <section id="sobreNosotros">
+        <article>
+          <h2><i class="fa-solid fa-heart"></i> Sobre Nosotros</h2>
+          <p>
+            En <strong>Restaurante La Luna</strong> llevamos mas de 20 años
+            sirviendo cocina tradicional con ingredientes frescos y locales.
+            Nuestro equipo de chefs apasionados transforma cada plato en una
+            experiencia memorable.
+          </p>
+          <p>
+            Nos enorgullece crear un ambiente calido donde cada visita se
+            convierte en un momento especial, ya sea una cena romantica o una
+            reunion familiar.
+          </p>
+          <a href="Contacto.html" class="btn-outline"
+            ><i class="fa-solid fa-phone"></i> Contactanos</a
+          >
+        </article>
+      </section>
+
+      <!-- La Carta -->
+      <section id="carta">
+        <h2><i class="fa-solid fa-book-open"></i> La Carta</h2>
+        <div class="carta-grid">
+          <article>
+            <h3>
+              <i class="fa-solid fa-drumstick-bite"></i> Platos Principales
+              &mdash; Carne
+            </h3>
+            <ul>
+              <li>Costillar de cerdo</li>
+              <li>Salchichas artesanas</li>
+              <li>Entrecot a la brasa</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>
+              <i class="fa-solid fa-fish"></i> Platos Principales &mdash;
+              Pescado
+            </h3>
+            <ul>
+              <li>Merluza al horno</li>
+              <li>Salmon a la plancha</li>
+              <li>Atun rojo sellado</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3><i class="fa-solid fa-pizza-slice"></i> Pasta &amp; Pizza</h3>
+            <ul>
+              <li>Macarrones boloñesa</li>
+              <li>Pizza Margarita</li>
+              <li>Pizza Barbacoa</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3><i class="fa-solid fa-wine-glass"></i> Bebidas</h3>
+            <ul>
+              <li>Aquarius</li>
+              <li>Coca Cola</li>
+              <li>Nestea</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3><i class="fa-solid fa-ice-cream"></i> Postres</h3>
+            <ul>
+              <li>Helado de Nata</li>
+              <li>Helado de Chocolate</li>
+              <li>Helado de Menta</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-moon"></i> Restaurante La Luna</h4>
+          <p>Cocina tradicional con alma, desde 2004.</p>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-clock"></i> Horario</h4>
+          <p>Lun &ndash; Vie: 13:00 &ndash; 16:00 | 20:00 &ndash; 23:30</p>
+          <p>Sabado &ndash; Dom: 13:00 &ndash; 24:00</p>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-share-nodes"></i> Siguenos</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="TripAdvisor"
+              ><i class="fa-brands fa-tripadvisor"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Restaurante La Luna &mdash; Todos los derechos reservados
+      </div>
+    </footer>
   </body>
 </html>

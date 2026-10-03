@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú Restaurante</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Menú Pedir</h1>
+      <nav>
+        <a href="index.html" class="btn-volver">Volver al Inicio</a>
+      </nav>
+    </header>
+    <main>
+      <form action="" id="formComensales">
+        <label for="">Cuantos Comensales</label>
+        <input
+          type="number"
+          name="cantidadComensales"
+          id="cantidadComensales"
+          min="1"
+          max="4"
+          required
+        />
+        <input type="submit" value="Continuar" id="enviarComensales" />
+      </form>
+      <form
+        action="pedido.php"
+        method="post"
+        id="pedirComida"
+        style="display: none"
+        target="_self"
+      >
+        <fieldset id="fieldset">
+          <legend id="numeroCliente"></legend>
+          <label for="select1">Plato 1:</label>
+          <select id="select1" name="plato1">
+            <option value="" disabled selected hidden></option>
+            <optgroup label="Carne">
+              <option value="carne">Costillar</option>
+              <option value="carne">Salchichas</option>
+              <option value="carne">Entrecot</option>
+            </optgroup>
+            <optgroup label="Pescado">
+              <option value="pescado">Merluza</option>
+              <option value="pescado">Salmon</option>
+              <option value="pescado">Atún</option>
+            </optgroup>
+            <optgroup label="Pasta & Pizza">
+              <option value="pasta">Macarrones</option>
+              <option value="pasta">Pizza margarita</option>
+              <option value="pasta">Pizza Barbacoa</option>
+            </optgroup>
+          </select>
+          <br />
+
+          <label for="select2">Plato 2:</label>
+          <select id="select2" name="plato2">
+            <option value="" disabled selected hidden></option>
+            <optgroup label="Carne">
+              <option value="carne">Costillar</option>
+              <option value="carne">Salchichas</option>
+              <option value="carne">Entrecot</option>
+            </optgroup>
+            <optgroup label="Pescado">
+              <option value="pescado">Merluza</option>
+              <option value="pescado">Salmon</option>
+              <option value="pescado">Atún</option>
+            </optgroup>
+            <optgroup label="Pasta & Pizza">
+              <option value="pasta">Macarrones</option>
+              <option value="pasta">Pizza margarita</option>
+              <option value="pasta">Pizza Barbacoa</option>
+            </optgroup>
+          </select>
+          <br />
+
+          <label for="select3">Bebidas:</label>
+          <select id="select3" name="bebida">
+            <option value="" disabled selected hidden></option>
+            <optgroup label="Refrescos">
+              <option value="refrescos">Aquarius</option>
+              <option value="refrescos">Coca Cola</option>
+              <option value="refrescos">Nestea</option>
+            </optgroup>
+          </select>
+          <br />
+
+          <label for="select4">Postres:</label>
+          <select id="select4" name="postre">
+            <option value="" disabled selected hidden></option>
+            <optgroup label="Helado">
+              <option value="helado">Helado de Nata</option>
+              <option value="helado">Helado de Chocolate</option>
+              <option value="helado">Helado de Menta</option>
+            </optgroup>
+          </select>
+          <br />
+          <input type="hidden" id="idCliente" name="idCliente" value="" />
+          <input type="submit" id="guardar_pedido" value="Guardar Pedido" />
+        </fieldset>
+        <input
+          type="submit"
+          id="enviarPedido"
+          value="Enviar Pedido"
+          style="display: none"
+        />
+      </form>
+    </main>
+    <footer></footer>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
