@@ -120,6 +120,3 @@ bottonEnviarPedido.addEventListener("click", (e) => {
     body: JSON.stringify(pedidos),
   });
 });
-
-
-// TODO : Falta añadir que el botton de Inicio No Sea visible si el comensal ya ha empezado a pedir 
